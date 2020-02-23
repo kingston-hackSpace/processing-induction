@@ -1,4 +1,4 @@
-// Example by Tom Igoe 
+// Based on serial example by Tom Igoe 
  
 import processing.serial.*; 
  
@@ -32,7 +32,7 @@ int[] values;
 void setup() { 
   size(600,350); 
   
-  img = loadImage("ball.png");
+  //img = loadImage("ball.png");
   
   ball_pos_x = width/2;
   ball_pos_y = height/2;
@@ -67,8 +67,8 @@ void draw() {
   rect(x_position_player_one,y_position_player_one,bat_width,bat_height);
   rect(x_position_player_two,y_position_player_two,bat_width,bat_height);
   
-  image(img, ball_pos_x,ball_pos_y);
-  //ellipse(ball_pos_x,ball_pos_y,10,10);
+  //image(img, ball_pos_x,ball_pos_y);
+  ellipse(ball_pos_x,ball_pos_y,10,10);
 } 
 
 void update_ball_position(){
